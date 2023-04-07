@@ -4,6 +4,7 @@ import { FaHamburger } from "react-icons/fa";
 import { navLinks } from "@/utils/data";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   const router = useRouter();
@@ -46,6 +47,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {openMobile && <MobileNav handleClose={() => setOpenMobile(false)}/>}
     </div>
   );
 };
