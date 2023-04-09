@@ -37,7 +37,7 @@ const ContactSection = () => {
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/3 w-full">
             <p className="font-medium">CONTACT ME</p>
-            <p className="text-5xl font-semibold mb-4">Lets Discuss Your Project</p>
+            <p className="md:text-5xl text-3xl font-semibold mb-4">Lets Discuss Your Project</p>
             <ul>
               <li className="mb-4">
                 <div className="flex gap-4">
@@ -61,7 +61,7 @@ const ContactSection = () => {
                   </div>
                 </div>
               </li>
-              <li className="mb-4">
+              {/* <li className="mb-4">
                 <div className="flex gap-4">
                   <div className="icon-box rounded-full h-14 w-14 bg-[#f37a233e] flex justify-center items-center">
                     <BsFillGeoAltFill className="text-2xl"/>
@@ -71,12 +71,13 @@ const ContactSection = () => {
                     <p>18 Idua road, Eket Akwa Ibom</p>
                   </div>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="md:w-2/3 w-full flex">
             <div className="md:w-2/3 w-full">
               <div className="rounded-xl p-5 shadow-lg">
+                <p className="my-5 text-lg font-semibold">Write to me</p>
                 <form ref={form} onSubmit={sendEmail}>
                   <div className="mb-3 ">
                     <label htmlFor="name" className="block mb-1">
@@ -119,7 +120,7 @@ const ContactSection = () => {
               </div>
             </div>
             <div className="w-1/3 md:block hidden">
-              <Image src={contact} alt="" className="h-full" />
+              <Image src={contact} alt="" className="w-full" />
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ const PortfolioSection = () => {
   return (
     <section className="font-jost py-10">
       <div className="w-11/12 mx-auto">
-        <h3 className="text-5xl mb-4">Projects I’ve Built</h3>
+        <h3 className="md:text-5xl text-3xl font-semibold mb-4">Projects I’ve Built</h3>
         <div>
           <div className="grid md:grid-cols-4 grid-cols-1  gap-5">
             {projects.map((project) => (

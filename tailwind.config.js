@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         jost: ["Jost", "san-serif"],
       },
+      backgroundColor: {
+        "skills": "linear-gradient(45deg, #000000c9, #000000c7)"
+      }
     },
   },
   plugins: [],

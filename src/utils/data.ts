@@ -98,3 +98,13 @@ export const projects = [
     background: cyphercresent,
   },
 ];
+
+
+export const thingsIDo = [
+  {
+    id: 1,
+    name: "Web Develoment",
+    description: "Need a websit for your company to boost your reputation while creating awareness? How about developing that web project you have in mind?",
+    icon: ""
+  },
+]

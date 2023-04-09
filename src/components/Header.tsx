@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, {useState} from "react";
-import { FaHamburger } from "react-icons/fa";
+import { FaHamburger, FaFirstOrderAlt } from "react-icons/fa";
 import { navLinks } from "@/utils/data";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -13,13 +13,13 @@ const Header = () => {
     <div className="w-full  top-0 z-40 left-0 fixed bg-white flex justify-center shadow-lg shadow-[rgba(0,0,0,0.025)] font-jost">
       <div className="w-11/12 mx-auto">
         <div className="flex justify-between items-center py-5 ">
-          <Link href="/">Ogo</Link>
+          <Link href="/" className="flex items-center text-2xl gap-0.5"><FaFirstOrderAlt/>G<FaFirstOrderAlt/></Link>
           <ul className="md:flex items-center gap-12 hidden">
             {navLinks.map((itemLink) => (
               <li key={itemLink.id}>
                 <Link
                   href={itemLink.url}
-                  className={`text-base font-normal pb-2 ${
+                  className={`text-lg font-medium pb-2 ${
                     router.pathname === itemLink.url
                       ? "border-b-4 border-[#F37B23]"
                       : ""

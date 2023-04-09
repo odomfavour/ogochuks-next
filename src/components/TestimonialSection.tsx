@@ -15,7 +15,7 @@ const TestimonialSection = () => {
         <div className="flex flex-col md:flex-row gap-5">
           <div className="md:w-1/5 w-full flex items-center">
             <div className="mt-5">
-              <p className="text-5xl mb-3 font-semibold">Testmonials</p>
+              <p className="md:text-5xl text-3xl mb-3 font-semibold">Testmonials</p>
               <p className="text-base">What my clients say</p>
             </div>
           </div>

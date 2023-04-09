@@ -13,7 +13,7 @@ const AboutSection = () => {
           <div className="md:w-1/2 w-full flex items-center">
            <div className="">
            <p>I AM A WEB DEVELOPER</p>
-           <h4 className="text-5xl my-3 font-semibold">About Me</h4>
+           <h4 className="md:text-5xl text-3xl my-3 font-semibold">About Me</h4>
             <p className="text-lg mb-3">
               I &apos;m a creative Web Developer who is passionate and dedicated
               to my work. I have over 3 years experience as a professional web

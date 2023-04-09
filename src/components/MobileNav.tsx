@@ -22,7 +22,7 @@ interface mobileNavProps {
               const { id, name, url } = item
               return (
                 <li className=" block pr-3 border-[#FF8717]" key={id}>
-                  <Link href={url}>{name}</Link>
+                  <Link href={url} className="text-lg font-medium">{name}</Link>
                 </li>
               )
             })}
