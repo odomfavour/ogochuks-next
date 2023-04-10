@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css"; // core Swiper
 import Image from "next/image";
+import { testimonials } from "@/utils/data";
 // import 'swiper/modules/autoplay/autoplay.min.css'; // core Swiper
 const TestimonialSection = () => {
   return (
@@ -15,7 +16,9 @@ const TestimonialSection = () => {
         <div className="flex flex-col md:flex-row gap-5">
           <div className="md:w-1/5 w-full flex items-center">
             <div className="mt-5">
-              <p className="md:text-5xl text-3xl mb-3 font-semibold">Testmonials</p>
+              <p className="md:text-5xl text-3xl mb-3 font-semibold">
+                Testmonials
+              </p>
               <p className="text-base">What my clients say</p>
             </div>
           </div>
@@ -48,181 +51,28 @@ const TestimonialSection = () => {
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}
             >
-              <SwiperSlide>
-                <div className=" p-5 bg-white shadow-md rounded-xl">
-                  <div className="mb-5">
-                    <p>
-                      We were looking for a logo with a touch of modernism. Arlo
-                      grasped our needs and produced a stunning design. Awesome
-                      to work with Arlo. Incredibly organized, easy to
-                      communicate with, responsive with next iterations.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center">
-                      <Image
-                        src={girl}
-                        alt=""
-                        className="rounded-full h-14 w-14 mr-3"
-                      />
-                      <div>
-                        <h5 className="mb-0">John Doe</h5>
-                        <p className="mb-0">Freelancer</p>
+              {testimonials.map((testimonial) => (
+                <SwiperSlide key={testimonial.id} className="">
+                  <div className="p-5 bg-white shadow-md rounded-xl min-h-[220px] flex flex-col justify-between">
+                    <div className="mb-5">
+                      <p>{testimonial.message}</p>
+                    </div>
+                    <div>
+                      <div className="flex items-center">
+                        <Image
+                          src={girl}
+                          alt=""
+                          className="rounded-full h-14 w-14 mr-3"
+                        />
+                        <div>
+                          <h5 className="mb-0 font-semibold text-lg">{testimonial.name}</h5>
+                          <p className="mb-0">{testimonial.role}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="p-5 bg-white shadow-md rounded-xl">
-                  <div className="mb-5">
-                    <p>
-                      We were looking for a logo with a touch of modernism. Arlo
-                      grasped our needs and produced a stunning design. Awesome
-                      to work with Arlo. Incredibly organized, easy to
-                      communicate with, responsive with next iterations.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center">
-                      <Image
-                        src={girl}
-                        alt=""
-                        className="rounded-full h-14 w-14 mr-3"
-                      />
-                      <div>
-                        <h5 className="mb-0">John Doe</h5>
-                        <p className="mb-0">Freelancer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className=" p-5 bg-white shadow-md rounded-xl">
-                  <div className="mb-5">
-                    <p>
-                      We were looking for a logo with a touch of modernism. Arlo
-                      grasped our needs and produced a stunning design. Awesome
-                      to work with Arlo. Incredibly organized, easy to
-                      communicate with, responsive with next iterations.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center">
-                      <Image
-                        src={girl}
-                        alt=""
-                        className="rounded-full h-14 w-14 mr-3"
-                      />
-                      <div>
-                        <h5 className="mb-0">John Doe</h5>
-                        <p className="mb-0">Freelancer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="p-5 bg-white shadow-md rounded-xl">
-                  <div className="mb-5">
-                    <p>
-                      We were looking for a logo with a touch of modernism. Arlo
-                      grasped our needs and produced a stunning design. Awesome
-                      to work with Arlo. Incredibly organized, easy to
-                      communicate with, responsive with next iterations.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center">
-                      <Image
-                        src={girl}
-                        alt=""
-                        className="rounded-full h-14 w-14 mr-3"
-                      />
-                      <div>
-                        <h5 className="mb-0">John Doe</h5>
-                        <p className="mb-0">Freelancer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="p-5 bg-white shadow-md rounded-xl">
-                  <div className="mb-5">
-                    <p>
-                      We were looking for a logo with a touch of modernism. Arlo
-                      grasped our needs and produced a stunning design. Awesome
-                      to work with Arlo. Incredibly organized, easy to
-                      communicate with, responsive with next iterations.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center">
-                      <Image
-                        src={girl}
-                        alt=""
-                        className="rounded-full h-14 w-14 mr-3"
-                      />
-                      <div>
-                        <h5 className="mb-0">John Doe</h5>
-                        <p className="mb-0">Freelancer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className=" p-5 bg-white shadow-md rounded-xl">
-                  <div className="mb-5">
-                    <p>
-                      We were looking for a logo with a touch of modernism. Arlo
-                      grasped our needs and produced a stunning design. Awesome
-                      to work with Arlo. Incredibly organized, easy to
-                      communicate with, responsive with next iterations.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center">
-                      <Image
-                        src={girl}
-                        alt=""
-                        className="rounded-full h-14 w-14 mr-3"
-                      />
-                      <div>
-                        <h5 className="mb-0">John Doe</h5>
-                        <p className="mb-0">Freelancer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="p-5 bg-white shadow-md rounded-xl">
-                  <div className="mb-5">
-                    <p>
-                      We were looking for a logo with a touch of modernism. Arlo
-                      grasped our needs and produced a stunning design. Awesome
-                      to work with Arlo. Incredibly organized, easy to
-                      communicate with, responsive with next iterations.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="flex items-center">
-                      <Image
-                        src={girl}
-                        alt=""
-                        className="rounded-full h-14 w-14 mr-3"
-                      />
-                      <div>
-                        <h5 className="mb-0">John Doe</h5>
-                        <p className="mb-0">Freelancer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>

@@ -108,3 +108,49 @@ export const thingsIDo = [
     icon: ""
   },
 ]
+
+export const testimonials = [
+  {
+    id: 1,
+    message: "I highly recommend Ogochukwu for any web development project. He are highly skilled, professional, and always willing to go the extra mile to ensure that the project is completed on time",
+    name: "Bisi",
+    role: "Product Manager",
+    image: "" 
+  },
+  {
+    id: 2,
+    message: "I was impressed with Ogochukwu's attention to detail and commitment to quality. They were able to quickly identify and fix any issues, and their code was clean and well-organized.",
+    name: "Mr John",
+    role: "Backend Developer",
+    image: "" 
+  },
+  {
+    id: 3,
+    message: "Working with Ogochukwu and the other developers was a pleasure. They were highly communicative throughout the project, and always kept us informed of their progress. The end result was a beautiful and functional website that met all of our requirements.",
+    name: "Tofunmi",
+    role: "Product manager",
+    image: "" 
+  },
+  {
+    id: 4,
+    message: "I would highly recommend Ogochukwu to anyone looking for a reliable and skilled web developer. They are passionate about their work and always deliver top-notch results",
+    name: "Aaron",
+    role: "Web developer",
+    image: "" 
+  },
+  {
+    id: 5,
+    message: "I have worked with Ogochukwu on multiple projects, and they have consistently delivered high-quality work. They are always willing to listen to feedback and make changes as needed to ensure that the project meets our expectations.",
+    name: "Chilo",
+    role: "Frontend Developer",
+    image: "" 
+  },
+  {
+    id: 6,
+    message: "Learning web development was sort of difficult for me but my story changed when I met Ogochuks as a mentor in an Internship. He explains things to the bare minimum",
+    name: "Chidiogo",
+    role: "Frontend trainee",
+    image: "" 
+  },
+
+]
