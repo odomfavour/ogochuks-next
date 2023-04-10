@@ -1,5 +1,5 @@
 import React from "react";
-import girl from "../../public/girly.jpg";
+import avatar from "../../public/avatar.jpg";
 // Import Swiper React components
 import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -60,7 +60,7 @@ const TestimonialSection = () => {
                     <div>
                       <div className="flex items-center">
                         <Image
-                          src={girl}
+                          src={avatar}
                           alt=""
                           className="rounded-full h-14 w-14 mr-3"
                         />
