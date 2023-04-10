@@ -32,7 +32,7 @@ const ContactSection = () => {
     }
   };
   return (
-    <div className="py-10 font-jost" id="#contact">
+    <div className="py-10 font-jost" id="contact">
       <div className="w-11/12 mx-auto">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/3 w-full">

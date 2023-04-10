@@ -4,7 +4,7 @@ import kodecamp from '../../public/ogo1.png'
 
 const AboutSection = () => {
   return (
-    <section className="py-10 bg-[#f37a233e] font-jost">
+    <section className="py-10 bg-[#f37a233e] font-jost" id="about">
       <div className="w-11/12 mx-auto">
         <div className="flex flex-col md:flex-row gap-4">
           <div className="md:w-1/2 w-full">
@@ -23,7 +23,7 @@ const AboutSection = () => {
             </p>
             <p className="text-lg mb-3">
               I code and create web applications for amazing people around the
-              world. I work with Vue, Nuxt, Graphql, Node JS, JavaScript,
+              world. I work with Vue, Nuxt, React, Next, Graphql, Node JS, JavaScript,
               Bootstrap, Tailwind.
             </p>
             <p className="text-lg mb-3">Give a call if you need something done.</p>
