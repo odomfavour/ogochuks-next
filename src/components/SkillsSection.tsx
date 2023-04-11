@@ -16,8 +16,8 @@ const SkillsSection = () => {
     <div className="font-jost py-10 bg-[#f37a233e]">
       <div className="w-11/12 mx-auto">
         <h3 className="md:text-5xl text-3xl font-semibold mb-4">Skills</h3>
-        <section className="flex flex-col md:flex-row">
-          <div className="md:w-2/3 w-full">
+        <section className="flex flex-col lg:flex-row">
+          <div className="lg:w-2/3 w-full">
             <div className="grid md:grid-cols-4 grid-cols-2  gap-5">
               <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
                 <div className="">
@@ -52,7 +52,7 @@ const SkillsSection = () => {
             </div>
           </div>
 
-          <div className="md:w-1/3 w-full">
+          <div className="lg:w-1/3 w-full">
             <Image src={astro} alt="space" />
           </div>
         </section>

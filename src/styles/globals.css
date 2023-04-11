@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --toastify-color-success: #f67a24 !important;
+    --toastify-color-error: red !important;
+    --toastify-color-progress-success: var(--toastify-color-success) !important;
+    --toastify-color-progress-error: var(--toastify-color-error) !important;
+    --toastify-font-family: 'Raleway', sans-serif !important;
+    --toastify-toast-width: 24rem !important;
+    --toastify-toast-min-height: 3rem !important;
+}
+
+.Toastify__toast {
+    border-radius: 3.5rem !important;
+    border-top-right-radius: 0 !important;
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 2px 15px 0 rgb(0 0 0 / 5%) !important;
+}

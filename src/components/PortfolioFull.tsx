@@ -10,11 +10,11 @@ const PortfolioFull = () => {
       <div className="w-11/12 mx-auto">
         <h3 className="md:text-5xl text-3xl font-semibold mb-6">Projects I’ve Built</h3>
         <div>
-          <div className="grid md:grid-cols-4 grid-cols-1  gap-5">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-5">
             {projects.map((project) => (
               <div className="cursor-pointer text-right shadow-2xl rounded-md" key={project.id}>
                 <div
-                  className="project-content flex items-center  bg-cover bg-top h-[400px] rounded-md"
+                  className="project-content flex items-center  bg-cover bg-top min-h-[400px] rounded-md"
                   style={{ backgroundImage: `url(${project.background.src})` }}
                 >
                   <div className="opacity-0 hover:opacity-100 p-[25px] w-full h-full bg-[#000000e0] text-white transition-all ease-in delay-300 duration-500 flex flex-col justify-between rounded-md">

@@ -6,11 +6,11 @@ const AboutSection = () => {
   return (
     <section className="py-10 bg-[#f37a233e] font-jost" id="about">
       <div className="w-11/12 mx-auto">
-        <div className="flex flex-col md:flex-row gap-4">
-          <div className="md:w-1/2 w-full">
+        <div className="flex flex-col lg:flex-row gap-4">
+          <div className="lg:w-1/2 w-full">
             <Image src={kodecamp} alt="ogochuks at kodecamp" className="w-full rounded-lg"/>
           </div>
-          <div className="md:w-1/2 w-full flex items-center">
+          <div className="lg:w-1/2 w-full flex items-center">
            <div className="">
            <p>I AM A WEB DEVELOPER</p>
            <h4 className="md:text-5xl text-3xl my-3 font-semibold">About Me</h4>

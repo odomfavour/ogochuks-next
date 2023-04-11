@@ -1,16 +1,27 @@
-import React, { useRef, FormEvent } from "react";
+import React, { useRef, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import contact from "../../public/question-mark.jpg";
 // import { sendEmail } from "../utils/sendEmail";
-import {BsFillGeoAltFill, BsFillPhoneVibrateFill,BsFillEnvelopeAtFill} from "react-icons/bs"
+import {
+  BsFillGeoAltFill,
+  BsFillPhoneVibrateFill,
+  BsFillEnvelopeAtFill,
+} from "react-icons/bs";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactSection = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (form.current) {
+      setIsLoading(true);
       emailjs
         .sendForm(
           "service_5i19qsi",
@@ -21,28 +32,40 @@ const ContactSection = () => {
         .then(
           (result) => {
             console.log(result.text);
+            toast.success("Your mail has been sent successfully");
             if (form.current) {
               form.current.reset();
+              setEmail("");
+              setMessage("");
+              setName("");
             }
+            setIsLoading(false);
           },
           (error) => {
             console.log(error.text);
+            toast.error("An error occurred, failed to send your mail");
+            setIsLoading(false);
           }
         );
     }
   };
+
+  const isButtonDisabled =
+    name.trim() === "" || email.trim() === "" || message.trim() === "";
   return (
     <div className="py-10 font-jost" id="contact">
       <div className="w-11/12 mx-auto">
-        <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/3 w-full">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-1/3 w-full">
             <p className="font-medium">CONTACT ME</p>
-            <p className="md:text-5xl text-3xl font-semibold mb-4">Lets Discuss Your Project</p>
+            <p className="md:text-5xl text-3xl font-semibold mb-4">
+              Lets Discuss Your Project
+            </p>
             <ul>
               <li className="mb-4">
                 <div className="flex gap-4">
                   <div className="icon-box rounded-full h-14 w-14 bg-[#f37a233e] flex justify-center items-center">
-                    <BsFillPhoneVibrateFill className="text-2xl"/>
+                    <BsFillPhoneVibrateFill className="text-2xl" />
                   </div>
                   <div className="contact-text">
                     <p>Phone</p>
@@ -53,7 +76,7 @@ const ContactSection = () => {
               <li className="mb-4">
                 <div className="flex gap-4">
                   <div className="icon-box rounded-full h-14 w-14 bg-[#f37a233e] flex justify-center items-center">
-                    <BsFillEnvelopeAtFill className="text-2xl"/>
+                    <BsFillEnvelopeAtFill className="text-2xl" />
                   </div>
                   <div className="contact-text">
                     <p>Email</p>
@@ -74,57 +97,66 @@ const ContactSection = () => {
               </li> */}
             </ul>
           </div>
-          <div className="md:w-2/3 w-full flex">
+          <div className="lg:w-2/3 w-full flex">
             <div className="md:w-2/3 w-full">
               <div className="rounded-xl p-5 shadow-lg">
                 <p className="my-5 text-lg font-semibold">Write to me</p>
                 <form ref={form} onSubmit={sendEmail}>
-                  <div className="mb-3 ">
-                    <label htmlFor="name" className="block mb-1">
-                      Name
-                    </label>
+                  <div className="mb-4">
                     <input
                       type="text"
-                      className="border border-[#f37a233e] w-full rounded-md py-2 px-4 h-12"
-                      name="from_name"
+                      name="name"
+                      placeholder="Your Name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      className="border-2 border-gray-200 p-3 w-full rounded-lg outline-none focus:border-[#F37B23] transition duration-500"
+                      required
                     />
                   </div>
-                  <div className="mb-3">
-                    <label htmlFor="email" className="block mb-1">
-                      Email
-                    </label>
+                  <div className="mb-4">
                     <input
                       type="email"
-                      className="border border-[#f37a233e] w-full rounded-md py-2 px-4 h-12"
-                      name="reply_to"
+                      name="email"
+                      placeholder="Your Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="border-2 border-gray-200 p-3 w-full rounded-lg outline-none focus:border-[#F37B23] transition duration-500"
+                      required
                     />
                   </div>
-                  <div className="mb-3">
-                    <label htmlFor="message" className="block mb-1">
-                      Message
-                    </label>
+                  <div className="mb-4">
                     <textarea
-                      className="border border-[#f37a233e] w-full rounded-md py-3 px-4"
                       name="message"
-                    />
+                      placeholder="Your Message"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      className="border-2 border-gray-200 p-3 w-full rounded-lg outline-none focus:border-[#F37B23] transition duration-500"
+                      required
+                    ></textarea>
                   </div>
                   <div className="flex justify-end">
                     <button
                       type="submit"
-                      className="bg-[#F37B23] rounded px-7 py-[6px] font-semibold text-base text-white"
+                      className={`${
+                        isButtonDisabled || isLoading
+                          ? "bg-[#f37a233e] cursor-not-allowed"
+                          : "bg-[#F37B23] hover:bg-[#d76d21] text-white"
+                      } p-3 rounded-lg`}
+                      disabled={isButtonDisabled || isLoading}
                     >
-                      Send Email
+                      {isLoading ? "Sending..." : "Send Message"}
                     </button>
                   </div>
                 </form>
               </div>
             </div>
-            <div className="w-1/3 md:block hidden">
-              <Image src={contact} alt="" className="w-full" />
+            <div className="md:w-1/3 hidden md:flex justify-center items-center">
+              <Image src={contact} alt="contact image" />
             </div>
           </div>
         </div>
       </div>
+      <ToastContainer position="top-right" />
     </div>
   );
 };

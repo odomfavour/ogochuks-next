@@ -13,7 +13,7 @@ const TestimonialSection = () => {
   return (
     <section className="testimony-section py-10 bg-[#f37a233e]">
       <div className="w-11/12 mx-auto">
-        <div className="flex flex-col md:flex-row gap-5">
+        <div className="flex flex-col lg:flex-row gap-5">
           <div className="md:w-1/5 w-full flex items-center">
             <div className="mt-5">
               <p className="md:text-5xl text-3xl mb-3 font-semibold">
@@ -35,12 +35,12 @@ const TestimonialSection = () => {
                   spaceBetween: 50,
                 },
                 427: {
-                  slidesPerView: 1,
+                  slidesPerView: 2,
                   spaceBetween: 10,
                 },
                 // when window width is <= 999px
                 769: {
-                  slidesPerView: 1,
+                  slidesPerView: 2,
                   spaceBetween: 10,
                 },
                 999: {
@@ -53,7 +53,7 @@ const TestimonialSection = () => {
             >
               {testimonials.map((testimonial) => (
                 <SwiperSlide key={testimonial.id} className="">
-                  <div className="p-5 bg-white shadow-md rounded-xl min-h-[220px] flex flex-col justify-between">
+                  <div className="p-5 bg-white shadow-md rounded-xl lg:min-h-[220px] md:min-h-[350px] min-h-[220px] flex flex-col justify-between">
                     <div className="mb-5">
                       <p>{testimonial.message}</p>
                     </div>
