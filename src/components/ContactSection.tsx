@@ -105,7 +105,7 @@ const ContactSection = () => {
                   <div className="mb-4">
                     <input
                       type="text"
-                      name="name"
+                      name="from_name"
                       placeholder="Your Name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -116,7 +116,7 @@ const ContactSection = () => {
                   <div className="mb-4">
                     <input
                       type="email"
-                      name="email"
+                      name="reply_to"
                       placeholder="Your Email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
