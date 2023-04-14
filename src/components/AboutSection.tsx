@@ -4,7 +4,7 @@ import kodecamp from '../../public/ogo1.png'
 
 const AboutSection = () => {
   return (
-    <section className="py-10 bg-[#f37a233e] font-jost" id="about">
+    <section className="py-10 bg-[#f37a233e] font-jost mt-5" id="about">
       <div className="w-11/12 mx-auto">
         <div className="flex flex-col lg:flex-row gap-4">
           <div className="lg:w-1/2 w-full">
