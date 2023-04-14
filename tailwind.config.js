@@ -15,6 +15,9 @@ module.exports = {
       },
       backgroundColor: {
         "skills": "linear-gradient(45deg, #000000c9, #000000c7)"
+      },
+      boxShadow: {
+        'addr': "0 5px 4px rgba(0,0,0,.3)"
       }
     },
   },

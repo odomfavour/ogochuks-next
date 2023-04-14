@@ -7,6 +7,9 @@ import {
   BsFillGeoAltFill,
   BsFillPhoneVibrateFill,
   BsFillEnvelopeAtFill,
+  BsFacebook,
+  BsTwitter,
+  BsLinkedin,
 } from "react-icons/bs";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -95,6 +98,38 @@ const ContactSection = () => {
                   </div>
                 </div>
               </li> */}
+            </ul>
+            <ul className="social-icons flex gap-4 mt-3">
+              <li>
+                <a
+                  href="https://web.facebook.com/ogochukwu.odom.5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#ee4730] hover:text-white hover:-translate-y-2 transition-all ease-in-out delay-150 duration-300"
+                >
+                  <BsFacebook/>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/godsfavourodom"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#ee4730] hover:text-white hover:-translate-y-2 transition-all ease-in-out delay-150 duration-300"
+                >
+                  <BsTwitter/>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ogochukwu-odom-a94870199/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#ee4730] hover:text-white hover:-translate-y-2 transition-all ease-in-out delay-150 duration-300"
+                >
+                  <BsLinkedin/>
+                </a>
+              </li>
             </ul>
           </div>
           <div className="lg:w-2/3 w-full flex">

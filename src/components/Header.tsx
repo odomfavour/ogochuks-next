@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaHamburger, FaFirstOrderAlt } from "react-icons/fa";
+import {GiHamburgerMenu} from "react-icons/gi"
 import { navLinks } from "@/utils/data";
 import { useRouter } from "next/router";
 import { Link as ScrollLink } from "react-scroll";
@@ -45,7 +46,7 @@ const Header = () => {
             </ScrollLink>
           </div>
           <div className="hamburger cursor-pointer md:hidden block">
-            <FaHamburger
+            <GiHamburgerMenu
               role="button"
               className="text-[#F37B23] text-3xl"
               onClick={() => setOpenMobile(true)}

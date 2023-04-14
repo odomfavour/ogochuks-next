@@ -53,7 +53,7 @@ const SkillsSection = () => {
           </div>
 
           <div className="lg:w-1/3 w-full">
-            <Image src={astro} alt="space" />
+            <Image src={astro} alt="space" className="animate-bounce" />
           </div>
         </section>
       </div>

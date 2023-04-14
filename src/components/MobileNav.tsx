@@ -2,6 +2,7 @@ import Link from "next/link"
 import React from "react"
 import { FaTimes } from "react-icons/fa"
 import { navLinks } from "@/utils/data";
+import { FaHamburger, FaFirstOrderAlt } from "react-icons/fa";
 interface mobileNavProps {
     handleClose(): void;
   }
@@ -13,7 +14,12 @@ interface mobileNavProps {
   return (
     <div className='fixed z-50 top-3 w-full'>
       <div className="w-11/12 mx-auto bg-white min-h-[300px] rounded-md p-5">
-        <div className="flex justify-end">
+        <div className="flex justify-between">
+          <div>
+          <Link href="/" className="flex items-center text-2xl gap-0.5">
+            <FaFirstOrderAlt />G<FaFirstOrderAlt />
+          </Link>
+          </div>
           <FaTimes className="text-red-500 text-xl" role="button" onClick={handleClose}/>
         </div>
         <div className="pt-3">

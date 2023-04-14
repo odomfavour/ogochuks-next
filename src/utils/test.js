@@ -36,3 +36,32 @@ function duplicateCount(text){
   }
   return -1;
 }
+
+function destroyer(arr, ...vals) {
+  console.log(arr, vals)
+  let newArr = []
+  for(let i =0; i < arr.length; i++) {
+    if(!vals.includes(arr[i])){
+      newArr.push(arr[i])
+    }
+  }
+  console.log(newArr)
+  return newArr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+function destroyer1(arr, ...valsToRemove) {
+  return arr.filter(elem => !valsToRemove.includes(elem));
+}
+
+
+function whatIsInAName(collection, source) {
+  return collection.filter(function(obj) {
+    return Object.keys(source).every(function(key) {
+      return obj.hasOwnProperty(key) && obj[key] === source[key];
+    });
+  });
+}
+
+console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" })); 
+// Output: [{ first: "Tybalt", last: "Capulet" }]
