@@ -121,28 +121,28 @@ export const testimonials = [
     id: 2,
     message: "I was impressed with Ogochukwu's attention to detail and commitment to quality. They were able to quickly identify and fix any issues, and their code was clean and well-organized.",
     name: "Mr John",
-    role: "Backend Developer",
+    role: "Manager",
     image: "" 
   },
   {
     id: 3,
     message: "Working with Ogochukwu and the other developers was a pleasure. They were highly communicative throughout the project, and always kept us informed of their progress. The end result was a beautiful and functional website that met all of our requirements.",
     name: "Tofunmi",
-    role: "Product manager",
+    role: "Manager",
     image: "" 
   },
   {
     id: 4,
     message: "I would highly recommend Ogochukwu to anyone looking for a reliable and skilled web developer. They are passionate about their work and always deliver top-notch results",
     name: "Aaron",
-    role: "Web developer",
+    role: "Manager",
     image: "" 
   },
   {
     id: 5,
     message: "I have worked with Ogochukwu on multiple projects, and they have consistently delivered high-quality work. They are always willing to listen to feedback and make changes as needed to ensure that the project meets our expectations.",
     name: "Chilo",
-    role: "Frontend Developer",
+    role: "Manager",
     image: "" 
   },
   {

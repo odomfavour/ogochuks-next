@@ -105,7 +105,7 @@ const ContactSection = () => {
                   href="https://web.facebook.com/ogochukwu.odom.5"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#ee4730] hover:text-white hover:-translate-y-2 transition-all ease-in-out delay-150 duration-300"
+                  className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#F37B23] hover:text-white hover:-translate-y-2 transition ease-in-out delay-150 duration-300"
                 >
                   <BsFacebook/>
                 </a>
@@ -115,7 +115,7 @@ const ContactSection = () => {
                   href="https://twitter.com/godsfavourodom"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#ee4730] hover:text-white hover:-translate-y-2 transition-all ease-in-out delay-150 duration-300"
+                  className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#F37B23] hover:text-white hover:-translate-y-2 transition ease-in-out delay-150 duration-300"
                 >
                   <BsTwitter/>
                 </a>
@@ -125,16 +125,16 @@ const ContactSection = () => {
                   href="https://www.linkedin.com/in/ogochukwu-odom-a94870199/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#ee4730] hover:text-white hover:-translate-y-2 transition-all ease-in-out delay-150 duration-300"
+                  className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#F37B23] hover:text-white hover:-translate-y-2 transition ease-in-out delay-150 duration-300"
                 >
                   <BsLinkedin/>
                 </a>
               </li>
             </ul>
           </div>
-          <div className="lg:w-2/3 w-full flex">
+          <div className="lg:w-2/3 w-full flex gap-2">
             <div className="md:w-2/3 w-full">
-              <div className="rounded-xl p-5 shadow-lg">
+              <div className="rounded-xl p-5 shadow-contact">
                 <p className="my-5 text-lg font-semibold">Write to me</p>
                 <form ref={form} onSubmit={sendEmail}>
                   <div className="mb-4">

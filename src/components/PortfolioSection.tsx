@@ -8,11 +8,16 @@ const PortfolioSection = () => {
   return (
     <section className="font-jost py-10">
       <div className="w-11/12 mx-auto">
-        <h3 className="md:text-5xl text-3xl font-semibold mb-4">Projects I’ve Built</h3>
+        <h3 className="md:text-5xl text-3xl font-semibold mb-4">
+          Projects I’ve Built
+        </h3>
         <div>
           <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-5">
             {projects.map((project) => (
-              <div className="cursor-pointer text-right shadow-2xl rounded-md" key={project.id}>
+              <div
+                className="cursor-pointer text-right shadow-2xl rounded-md"
+                key={project.id}
+              >
                 <div
                   className="project-content flex items-center  bg-cover bg-top min-h-[400px] rounded-md"
                   style={{ backgroundImage: `url(${project.background.src})` }}
@@ -72,7 +77,7 @@ const PortfolioSection = () => {
           <div className="mt-10 justify-center flex">
             <Link
               href="/portfolio"
-              className="bg-[#F37B23] rounded px-7 py-[6px] font-semibold text-base text-white"
+              className="bg-[#F37B23] rounded px-7 py-[6px] font-semibold text-base text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#f37a23da] duration-300"
             >
               See More
             </Link>

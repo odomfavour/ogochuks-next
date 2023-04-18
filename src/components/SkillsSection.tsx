@@ -20,34 +20,76 @@ const SkillsSection = () => {
           <div className="lg:w-2/3 w-full">
             <div className="grid md:grid-cols-4 grid-cols-2  gap-5">
               <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
-                <div className="">
-                  <FaReact className="text-4xl text-blue-400" />
-                  <p className="text-xltext-center">ReactJs</p>
+                <div className="text-center">
+                  <FaReact className="text-4xl text-blue-400 mx-auto" />
+                  <p className="text-lg text-center mt-2 font-semibold italic">
+                    ReactJs
+                  </p>
                 </div>
               </div>
               <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
-                <FaVuejs className="text-4xl text-green-700" />
+                <div className="text-center">
+                  <FaVuejs className="text-4xl text-green-700 mx-auto" />
+                  <p className="text-lg text-center mt-2 font-semibold italic">
+                    VueJs
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
+                <div className="text-center">
+                  <SiNuxtdotjs className="text-4xl text-green-700 mx-auto" />
+                  <p className="text-lg text-center mt-2 font-semibold italic">
+                    Nuxt
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
+                <div className="text-center">
+                  <SiNextdotjs className="text-4xl mx-auto" />
+                  <p className="text-lg text-center mt-2 font-semibold italic">
+                    NextJs
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
+                <div className="text-center">
+                  <FaNodeJs className="text-4xl text-green-700 mx-auto" />
+                  <p className="text-lg text-center mt-2 font-semibold italic">
+                    NodeJs
+                  </p>
+                </div>
               </div>
               <div className=" bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
-                <FaGithub className="text-4xl" />
+                <div className="text-center">
+                  <FaGithub className="text-4xl mx-auto" />
+                  <p className="text-lg text-center mt-2 font-semibold italic">
+                    Github
+                  </p>
+                </div>
               </div>
               <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
-                <FaHtml5 className="text-4xl text-orange-400" />
+                <div className="text-center">
+                  <FaHtml5 className="text-4xl text-orange-400 mx-auto" />
+                  <p className="text-lg text-center mt-2 font-semibold italic">
+                    HTML
+                  </p>
+                </div>
               </div>
               <div className=" bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
-                <FaCss3 className="text-4xl text-blue-600" />
+                <div className="text-center">
+                  <FaCss3 className="text-4xl text-blue-600 mx-auto" />
+                  <p className="text-lg text-center mt-2 font-semibold italic">
+                    CSS
+                  </p>
+                </div>
               </div>
               <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
-                <FaNodeJs className="text-4xl text-green-700" />
-              </div>
-              <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
-                <SiJavascript className="text-4xl text-yellow-400" />
-              </div>
-              <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
-                <SiNuxtdotjs className="text-4xl text-green-700" />
-              </div>
-              <div className="bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 cursor-pointer h-[120px] flex items-center justify-center">
-                <SiNextdotjs className="text-4xl " />
+                <div className="text-center ">
+                  <SiJavascript className="text-4xl text-yellow-400 mx-auto" />
+                  <p className="text-lg text-center mt-2 font-semibold italic">
+                    JavaScript
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -40,7 +40,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               activeClass="font-bold text-[#F37B23]"
-              className="bg-[#F37B23] rounded px-7 py-[6px] font-semibold text-base text-white cursor-pointer"
+              className="bg-[#F37B23] rounded px-7 py-[6px] font-semibold text-base text-white cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#f37a23da]  duration-300"
             >
               Hire Me
             </ScrollLink>
