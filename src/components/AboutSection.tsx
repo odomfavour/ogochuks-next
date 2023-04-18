@@ -25,7 +25,7 @@ const AboutSection = () => {
                 professional experience, I take pride in my ability to turn your
                 project into a success. I enjoy every aspect of the design
                 process, from discussing ideas to collaborating on the final
-                product. don&apos;t hesitate to reach out and give me a call.
+                product.
               </p>
               <p className="text-lg mb-3">
                 My expertise in Vue, Nuxt, React, Next, Graphql, Node JS,
@@ -33,7 +33,7 @@ const AboutSection = () => {
                 web applications for clients across the globe.
               </p>
               <p className="text-lg mb-3">
-                If you&apos;re in need of top-notch web development services,
+                If you&apos;re in need of top-notch web development services, don&apos;t hesitate to reach out and give me a call.
               </p>
             </div>
           </div>
