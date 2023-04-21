@@ -56,7 +56,25 @@ const ContactSection = () => {
   const isButtonDisabled =
     name.trim() === "" || email.trim() === "" || message.trim() === "";
   return (
-    <div className="py-10 font-jost" id="contact">
+    <div className="pb-10 font-jost" id="contact">
+      <div className="bg-email bg-cover bg-center text-white">
+        <div className="w-11/12 mx-auto">
+          <div className="flex justify-center items-center py-5 h-[300px] mb-6">
+            <div className="text-center">
+              <p className="md:text-3xl text-xl mb-4">
+                Have a project or some concerns, you can write a mail to me
+              </p>
+
+              <a
+                href="mailto:ogochukwuodom@gmail.com"
+                className="bg-[#F37B23] rounded px-7 py-[6px] font-semibold text-base text-white cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-[#f37a23da]  duration-300"
+              >
+                Email Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="w-11/12 mx-auto">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/3 w-full">
@@ -107,7 +125,7 @@ const ContactSection = () => {
                   rel="noopener noreferrer"
                   className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#F37B23] hover:text-white hover:-translate-y-2 transition ease-in-out delay-150 duration-300"
                 >
-                  <BsFacebook/>
+                  <BsFacebook />
                 </a>
               </li>
               <li>
@@ -117,7 +135,7 @@ const ContactSection = () => {
                   rel="noopener noreferrer"
                   className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#F37B23] hover:text-white hover:-translate-y-2 transition ease-in-out delay-150 duration-300"
                 >
-                  <BsTwitter/>
+                  <BsTwitter />
                 </a>
               </li>
               <li>
@@ -127,12 +145,12 @@ const ContactSection = () => {
                   rel="noopener noreferrer"
                   className="rounded-full text-center h-[60px] w-[60px] relative shadow-addr flex justify-center items-center bg-[#f37a233e] hover:bg-[#F37B23] hover:text-white hover:-translate-y-2 transition ease-in-out delay-150 duration-300"
                 >
-                  <BsLinkedin/>
+                  <BsLinkedin />
                 </a>
               </li>
             </ul>
           </div>
-          <div className="lg:w-2/3 w-full flex gap-2">
+          <div className="lg:w-2/3 w-full flex gap-2 mt-5 md:mt-0">
             <div className="md:w-2/3 w-full">
               <div className="rounded-xl p-5 shadow-contact">
                 <p className="my-5 text-lg font-semibold">Write to me</p>
