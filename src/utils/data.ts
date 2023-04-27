@@ -1,5 +1,9 @@
 import countrySearch from "../../public/projects/country-search-challenge.png";
 import cyphercresent from "../../public/projects/cyphercrescent.png";
+import kitchendiary from "../../public/projects/kitchendiary.png";
+import portfolio from "../../public/projects/portfolio.png";
+import shopsy from "../../public/projects/shopsy.png";
+import fhenix from "../../public/projects/fhenix.png";
 import delta7 from "../../public/projects/delta7.png";
 import mcholly from "../../public/projects/mc-holly.png";
 import pexelsclone from "../../public/projects/pexels-clone-tesst.png";
@@ -32,14 +36,22 @@ export const navLinks = [
 export const projects = [
   {
     id: 1,
+    name: "Kitchen Diary",
+    description: "A website where users can create their recipes and print them on a beautiful A4 paper",
+    link: "https://kitchendiary-web-new.vercel.app/",
+    stack: ["ReactJS", "Tailwind CSS", "Typescript"],
+    background: kitchendiary,
+  },
+  {
+    id: 2,
     name: "CypherCrescent",
-    description: "A Business Website",
+    description: "A Business Website where people get to buy courses with Paystack and know about the company",
     link: "https://cyphercrescentlearning.com/",
     stack: ["ReactJS", "Bootstrap"],
     background: cyphercresent,
   },
   {
-    id: 2,
+    id: 3,
     name: "MC Holly",
     description: "A Site for comedy Reservation",
     link: "https://www.mcholly.com/",
@@ -47,7 +59,15 @@ export const projects = [
     background: mcholly,
   },
   {
-    id: 3,
+    id: 4,
+    name: "delta7",
+    description: "A website for NFTs",
+    link: "https://delta7.netlify.app",
+    stack: ["ReactJS", "Bootstrap"],
+    background: delta7,
+  },
+  {
+    id: 5,
     name: "Pexel Clone",
     description:
       "A clone of the pexel application. Users can search for images",
@@ -56,23 +76,23 @@ export const projects = [
     background: pexelsclone,
   },
   {
-    id: 4,
-    name: "delta7",
-    description: "A website for NFT for a project",
-    link: "https://delta7.netlify.app",
-    stack: ["ReactJS", "Bootstrap"],
-    background: delta7,
+    id: 6,
+    name: "Shopsy",
+    description: "An Ecommerce Website that mimicks a working ecommerce website",
+    link: "https://shop-test-ruby.vercel.app/",
+    stack: ["VueJS", "Tailwind CSS", "Vuex"],
+    background: shopsy,
   },
   {
-    id: 5,
+    id: 7,
     name: "Unsplash Gallery",
-    description: "A test project to build a dashboard",
+    description: "A test project to build a gallery",
     link: "https://unsplash-gallery-test.netlify.app",
     stack: ["VueJS", "Bootstrap"],
     background: unsplash,
   },
   {
-    id: 6,
+    id: 8,
     name: "Untitled UI Dashboard",
     description: "A test project to build a dashboard",
     link: "https://untitled-ui-nuxt.netlify.app",
@@ -80,22 +100,31 @@ export const projects = [
     background: untitled,
   },
   {
-    id: 7,
+    id: 9,
     name: "Country Search Challenge",
     description:
       "An application to display countries and also search for countries",
     link: "https://country-search-challenge.netlify.app",
-    stack: ["HTML", "Bootstrap", "Javascript"],
+    stack: ["HTML", "CSS", "JavaScript"],
     background: countrySearch,
   },
   {
-    id: 8,
+    id: 10,
     name: "Developer portfolio",
     description:
       "A developers portfolio. This is basically a way for the developer to be able to sell himself. It's a lovely combination of everything",
     link: "https://silver-lining.netlify.app",
     stack: ["VueJS", "Bootstrap"],
-    background: cyphercresent,
+    background: portfolio,
+  },
+  {
+    id: 11,
+    name: "Fhenix",
+    description:
+      "A training company website",
+    link: "https://fhenix-test.vercel.app/",
+    stack: ["VueJS", "Bootstrap"],
+    background: fhenix,
   },
 ];
 
