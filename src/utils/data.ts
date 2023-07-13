@@ -9,6 +9,10 @@ import mcholly from "../../public/projects/mc-holly.png";
 import pexelsclone from "../../public/projects/pexels-clone-tesst.png";
 import unsplash from "../../public/projects/unsplash-gallery-vue.png";
 import untitled from "../../public/projects/untitled-ui-nuxt.png";
+import weatherWiz from "../../public/projects/weather.png"
+import nft from "../../public/projects/nft.png"
+import movie from "../../public/projects/movie.png"
+import carShowcase from "../../public/projects/car-showcase.png"
 
 export const navLinks = [
   {
@@ -79,7 +83,7 @@ export const projects = [
     id: 6,
     name: "Shopsy",
     description: "An Ecommerce Website that mimicks a working ecommerce website",
-    link: "https://shop-test-ruby.vercel.app/",
+    link: "https://shoppie-psi.vercel.app/",
     stack: ["VueJS", "Tailwind CSS", "Vuex"],
     background: shopsy,
   },
@@ -125,6 +129,42 @@ export const projects = [
     link: "https://fhenix-test.vercel.app/",
     stack: ["VueJS", "Bootstrap"],
     background: fhenix,
+  },
+  {
+    id: 12,
+    name: "Weather Wiz",
+    description:
+      "A website for getting current weather information",
+    link: "https://weather-wiz-delta.vercel.app/",
+    stack: ["VueJS", "Tailwind", "Vuex"],
+    background: weatherWiz,
+  },
+  {
+    id: 13,
+    name: "Nuxt moovie",
+    description:
+      "A website for fetching movies and watching previews",
+    link: "https://nuxt3-movie-app.vercel.app/",
+    stack: ["NuxtJs", "Tailwind"],
+    background: movie,
+  },
+  {
+    id: 14,
+    name: "Nft Display",
+    description:
+      "A website for Nft display",
+    link: "https://nft-chip.vercel.app/",
+    stack: ["ReactJs", "Tailwind"],
+    background: nft,
+  },
+  {
+    id: 15,
+    name: "Car Showcase",
+    description:
+      "A website for Nft display",
+    link: "https://car-showcase-next-ojhe.vercel.app/",
+    stack: ["NextJS", "Tailwind"],
+    background: carShowcase,
   },
 ];
 

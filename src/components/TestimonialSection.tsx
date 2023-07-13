@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import avatar from "../../public/avatar.jpg";
 // Import Swiper React components
