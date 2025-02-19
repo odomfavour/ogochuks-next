@@ -23,7 +23,7 @@ export default function Home() {
         <title>Ogochuks || Home</title>
         <meta name="description" content="Ogochukwu Odom" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/ogoo.ico" />
+        <link rel="icon" href="/ogo-prof.ico" />
       </Head>
       <main className="scroll-smooth">
         <Header />
